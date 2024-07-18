@@ -34,11 +34,11 @@ module.exports = {
 
 	VERSION: 'v4.4.1', 
 
-    SESSION_ID: process.env.SESSION_ID || '',
+    SESSION_ID: process.env.SESSION_ID || '07_18_H_E_R_M_I_T_GA_7PHW',
 
-    MODE: (process.env.MODE || 'public').toLowerCase(),
+    MODE: (process.env.MODE || 'private').toLowerCase(),
 
-    HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+    HANDLERS: (process.env.PREFIX || '+').trim(),
 
     SEND_READ: (process.env.READ_COMMAND || false),
 
@@ -52,7 +52,7 @@ module.exports = {
 
     ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
 
-    BOT_NAME: process.env.BOT_NAME || 'ʜᴇʀᴍɪᴛ',
+    BOT_NAME: process.env.BOT_NAME || 'Caesar',
 
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(Change this by setting var AUTOMUTE_MSG)_',
 
@@ -98,7 +98,7 @@ module.exports = {
 
        },
 
-       DATABASE_URL: DATABASE_URL,
+       DATABASE_URL:process.env.DATABASE_URL || 'mongodb+srv://caesar:OLUSUNLE@cluster0.lmzgxmx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
 
        DATABASE:
 
@@ -108,7 +108,7 @@ module.exports = {
 
        BRAIN_ID: process.env.BRAIN_ID || 'bid=168613&key=EfbnX54Iy9PFIFp3',
 
-       SUDO: process.env.SUDO || '972528277700,0',
+       SUDO: process.env.SUDO || '2348078112891,0',
 
        DEBUG: DEBUG
 
